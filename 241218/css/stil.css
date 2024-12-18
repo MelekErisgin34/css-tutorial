@@ -1,0 +1,85 @@
+*{
+    margin: 0;/*dış boslukları sıfırla*/
+    padding: 0;/*ic boslukları sıfırla*/
+    box-sizing: border-box;/*kutu genişlik ve yüksekligini border'a kadar belirlenir*/
+}
+body{
+    background-image: url(../img/fresh-spring-background.jpg);
+    background-size: cover;/*resmin eklena kaplaması için cover kullanılır*/
+    min-height: 100vh;
+    
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#logo{
+    text-align: center;
+    padding: 24px;
+}
+#logo img{
+    width: 150px;
+}
+.container{
+    margin: auto;
+    width: 70%;
+}
+#menu{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #000;/* 0 0 x ve y konumu 5px kalınlıgında*/
+}
+#menu ul{
+    display: flex;
+    justify-content: space-around;/*Flex nesnelerin hizalanması*/
+    list-style-type: none;
+    
+
+}
+#menu a{ 
+    text-decoration: none;
+   color: #e66c06;
+   font-size: larger;
+   font-family: sans-serif;
+   
+}
+#menu a:hover{
+    background-color: #e66c06;
+    color: #ffffff;
+    transition: 1s;/*gecikme süresi ekler */
+}
+.banner{
+    text-align: center;
+}
+.urunler{
+    display: flex;
+    gap: 24px;
+}
+.urun img{
+    width:300px;
+}
+.urun{
+    flex: 1;/* urun sınıfında ait divlerin aynı genişlikte olmasını saglar*/
+   box-shadow: 0 0 5px #000;/* 0 0 x ve y konumu 5px kalınlıgında*/
+    
+}
+.urun img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 0 5px gray;
+
+}
+.sol{
+    color: #e66c06;
+   
+}
+.sag{
+    color: #000;
+}
